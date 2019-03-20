@@ -7,9 +7,10 @@ def prime?(integer)
     return true
   end
   array = []
+  array2 = []
   array=*(2..integer-1)
-  array.collect do |x|
-    integer % x
+  array.each do |x|
+     integer % x
     if array.include?(0) == true
       return false
     else
