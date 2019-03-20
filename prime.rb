@@ -10,8 +10,8 @@ def prime?(integer)
   array2 = []
   array=*(2..integer-1)
   array.each do |x|
-    integer % x
-    if array.include?(0) == true
+    array2 << integer % x
+    if array2.include?(0) == true
       return false
     else
       puts array
