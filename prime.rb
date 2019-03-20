@@ -11,11 +11,11 @@ def prime?(integer)
   array=*(2..integer-1)
   array.each do |x|
     array2 << integer % x
+  end
     if array2.include?(0) == true
       return false
     else
       puts array
       return true
-    end
   end
 end
