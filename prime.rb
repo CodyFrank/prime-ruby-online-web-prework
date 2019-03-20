@@ -11,11 +11,9 @@ def prime?(integer)
   array.collect do |x|
     integer % x
     if array.include?(0) == true
-      puts "not a prime"
       return false
     else
-      puts integer
-      puts array.include?(0)
+      puts array
       return true
     end
   end
