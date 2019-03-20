@@ -15,7 +15,6 @@ def prime?(integer)
     if array2.include?(0) == true
       return false
     else
-      puts array
       return true
   end
 end
